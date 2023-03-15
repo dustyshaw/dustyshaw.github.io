@@ -1,5 +1,6 @@
 * {
     font-family: monospace;
+    max-width: 90vw;
 }
 
 body {
@@ -19,6 +20,15 @@ body {
 h2 {
     font-weight: bold;
     /* text-shadow: -1px 1px #adccff; */
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-left: 5vw;
+    }
+    .hover-card:hover {
+        box-shadow: none;
+    }
 }
 
 /*
