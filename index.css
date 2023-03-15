@@ -57,3 +57,7 @@ button {
     border: none;
     border-radius: 3px;
   }
+
+  a {
+    color:#81a3da;
+  }
