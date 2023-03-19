@@ -43,6 +43,6 @@ h2 {
   }
 
   #selfie {
-      border-radius: 50%;
-      max-width: 200px;
+      border-radius: 50 !important%;
+      max-width: 200px !important;
   }
