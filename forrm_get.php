@@ -1,7 +1,6 @@
 <html>
     <body>
-        <!-- Thanks for submitting,  <?php echo $_GET["name"]; ?>!<br> -->
-
+        <h1>Message sent</h1>
         <?php
             $to = "shustydaw@gmail.com";
             $subject = "Portfolio Message";
