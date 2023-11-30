@@ -1,12 +1,16 @@
 * {
-    font-family: monospace;
+    font-family: sans-serif;
     max-width: 90vw;
+    background-color: #2d3250;
+    color: white;
 }
 
 body {
     max-width: 800px;
     margin-left: auto;
     margin-right:auto;
+    background-color: #2d3250;
+    color: white;
 }
 
 .hover-card {
@@ -14,7 +18,7 @@ body {
 }
 
 .hover-card:hover {
-    box-shadow: -10px 10px #adccff;
+    box-shadow: -10px 10px #ebbd34 ;
 }
 
 h2 {
@@ -22,11 +26,39 @@ h2 {
     /* text-shadow: -1px 1px #adccff; */
 }
 
-#changeThemeBtn {
-    position: fixed;
-    bottom: 5px;
-    right: 5px;
+a:hover {
+    color: #e8c868;
 }
+
+.half-highlight {
+    font-size: 30px;
+    background-image: linear-gradient(to right, transparent 5%, #6875e89e 5%);
+    background-origin: 0;
+    background-size: 200% 50%;
+    background-repeat: repeat-x;
+    background-position: 0 100%;
+    transition: background-position 0.5s;
+    background-position: -100% 100%;
+  }
+
+  .skill-tile {
+    height: 100px; width: 100px;
+    background-color: #40445c;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+/* .fade-hidden {
+     opacity: 1;   
+    background-color: blue;
+    transition: opacity .5s;
+}
+
+.fade-show {
+    background-color: red;
+    opacity: 0; 
+} */
 
 @media (max-width: 480px) {
     body {
@@ -38,17 +70,12 @@ h2 {
 }
 
   button {
-    background-color: #323a40;
+    background-color: #2d3250;
     color: white;
     border: none;
     border-radius: 3px;
   }
 
   a {
-    color:#81a3da;
-  }
-
-  #selfie {
-      border-radius: 50 !important%;
-      max-width: 200px !important;
+    color: #ebbd34;
   }
