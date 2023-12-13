@@ -1,11 +1,17 @@
 * {
     font-family: sans-serif;
-    max-width: 90vw;
     background-color: #2d3250;
     color: white;
+    margin: 0;
 }
 
 body {
+    background-color: #2d3250;
+    color: white;
+    width: 100%;
+}
+
+.content {
     max-width: 800px;
     margin-left: auto;
     margin-right:auto;
@@ -43,11 +49,43 @@ a:hover {
 
   .skill-tile {
     height: 100px; width: 100px;
-    background-color: #40445c;
-    border-radius: 10px;
+    background-color: #2d3250;
+    border-radius: 20px;
     padding: 10px;
     margin: 20px;
+    box-shadow: -5px -3px 10px #454961, 5px 5px 10px #1c213a;
   }
+
+  .grad-background {
+    background: linear-gradient(45deg, #0D0D1B, #0c0e49);
+    width: 100%;
+  }
+
+  .grad-background * {
+    background: none;
+  }
+
+  .gb-interior {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right:auto;
+  }
+
+  .link-img {
+    width: 35px; 
+    transition: transform .25s;
+  }
+
+  .link-img:hover {
+    transform: translate(0px, -5px);
+  }
+
+  footer {
+    background-color: #2d3250;
+    /* background: linear-gradient(0deg, #0D0D1B, #2d3250); */
+
+  }
+
 
 /* .fade-hidden {
      opacity: 1;   
