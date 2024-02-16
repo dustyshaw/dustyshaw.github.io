@@ -1,90 +1,134 @@
 * {
-    font-family: sans-serif;
-    background-color: #2d3250;
-    color: white;
-    margin: 0;
+  font-family: sans-serif;
+  background-color: #2d3250;
+  color: white;
+  margin: 0;
 }
 
 body {
-    background-color: #2d3250;
-    color: white;
-    width: 100%;
+  background-color: #2d3250;
+  color: white;
+  width: 100%;
+}
+
+/* Header Portion */
+.container-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#portfolio-img {
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+}
+
+.project-img {
+  border-radius: 10px;
+  width: 375px;
+  max-width: 90vw;
+}
+
+.header-side {
+  height: 70px;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  width: 400px;
+}
+
+.top {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon-sm {
+  height: 38px;
+  transition: transform 0.3s;
+}
+
+.icon-sm:hover {
+  transform: translateY(-5px);
 }
 
 .content {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right:auto;
-    background-color: #2d3250;
-    color: white;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #2d3250;
+  color: white;
 }
 
 .hover-card {
-    border: solid black 1px;
+  border: solid black 1px;
 }
 
 .hover-card:hover {
-    box-shadow: -10px 10px #ebbd34 ;
+  box-shadow: -10px 10px #ebbd34;
 }
 
 h2 {
-    font-weight: bold;
-    /* text-shadow: -1px 1px #adccff; */
+  font-weight: bold;
+  /* text-shadow: -1px 1px #adccff; */
 }
 
 a:hover {
-    color: #e8c868;
+  color: #e8c868;
 }
 
 .half-highlight {
-    font-size: 30px;
-    background-image: linear-gradient(to right, transparent 5%, #6875e89e 5%);
-    background-origin: 0;
-    background-size: 200% 50%;
-    background-repeat: repeat-x;
-    background-position: 0 100%;
-    transition: background-position 0.5s;
-    background-position: -100% 100%;
-  }
+  font-size: 30px;
+  background-image: linear-gradient(to right, transparent 5%, #6875e89e 5%);
+  background-origin: 0;
+  background-size: 200% 50%;
+  background-repeat: repeat-x;
+  background-position: 0 100%;
+  transition: background-position 0.5s;
+  background-position: -100% 100%;
+}
 
-  .skill-tile {
-    height: 100px; width: 100px;
-    background-color: #2d3250;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 20px;
-    box-shadow: -5px -3px 10px #454961, 5px 5px 10px #1c213a;
-  }
+.skill-tile {
+  height: 100px;
+  width: 100px;
+  background-color: #2d3250;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 20px;
+  box-shadow: -5px -3px 10px #454961, 5px 5px 10px #1c213a;
+}
 
-  .grad-background {
-    background: linear-gradient(45deg, #0D0D1B, #0c0e49);
-    width: 100%;
-  }
+.grad-background {
+  background: linear-gradient(45deg, #0D0D1B, #0c0e49);
+  width: 100%;
+}
 
-  .grad-background * {
-    background: none;
-  }
+.grad-background * {
+  background: none;
+}
 
-  .gb-interior {
-    max-width: 900px;
-    margin-left: auto;
-    margin-right:auto;
-  }
+.gb-interior {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
-  .link-img {
-    width: 35px; 
-    transition: transform .25s;
-  }
+.link-img {
+  width: 35px;
+  transition: transform .25s;
+}
 
-  .link-img:hover {
-    transform: translate(0px, -5px);
-  }
+.link-img:hover {
+  transform: translate(0px, -5px);
+}
 
-  footer {
-    background-color: #2d3250;
-    /* background: linear-gradient(0deg, #0D0D1B, #2d3250); */
+footer {
+  background-color: #2d3250;
+  /* background: linear-gradient(0deg, #0D0D1B, #2d3250); */
 
-  }
+}
 
 
 /* .fade-hidden {
@@ -99,21 +143,29 @@ a:hover {
 } */
 
 @media (max-width: 480px) {
-    body {
-        margin-left: 5vw;
-    }
-    .hover-card:hover {
-        box-shadow: none;
-    }
+  body {
+    margin-left: 5vw;
+  }
+
+  .hover-card:hover {
+    box-shadow: none;
+  }
 }
 
-  button {
-    background-color: #2d3250;
-    color: white;
-    border: none;
-    border-radius: 3px;
+@media only screen and (max-width: 600px) {
+  #portfolio-img {
+    height: 82px;
+    width: 82px;
   }
+}
 
-  a {
-    color: #ebbd34;
-  }
+button {
+  background-color: #2d3250;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+a {
+  color: #ebbd34;
+}

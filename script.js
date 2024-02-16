@@ -27,3 +27,17 @@ const observer = new intersectionCallback((entries) => {
   
 const hiddenele = document.querySelectorAll(".fade-hidden");
 hiddenele.forEach((ele) => observer.observe(ele));
+
+
+function obfuscateEmail(email) {
+    var obfuscatedEmail = "";
+    for (var i = 0; i < email.length; i++) {
+        obfuscatedEmail += "&#" + email.charCodeAt(i) + ";";
+    }
+    return obfuscatedEmail;
+}
+
+var email = "shustydaw@gmail.com";
+var obfuscatedEmail = obfuscateEmail(email);
+document.getElementById("obfuscated-email").innerHTML = obfuscatedEmail;
+ 
