@@ -1,0 +1,43 @@
+body {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+}
+
+p ul li ol{
+    line-height: 1.55rem;
+    font-size: 17.5px;
+    color: darkslategray;
+}
+
+a {
+    color: rgb(1, 146, 235);
+    text-decoration: none;
+}
+
+
+.code-content {
+    background-color: #262626;
+    font-family: monospace, sans-serif;
+    color: white !important;
+    padding: 10px;
+    border: solid lightgray 1px;
+    border-radius: 7px 7px 0px 0px;
+  }
+
+  .code-content p {
+    color: white;
+  }
+  
+  .code-content p:hover {
+    background-color: black;
+  }
+  
+  .code-block .code-footer {
+    background-color: lightgray;
+    border-radius: 0px 0px 7px 7px;
+    padding-left: 10px;
+    font-size: small;
+    color: darkgray;
+  }
