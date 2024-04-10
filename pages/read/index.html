@@ -37,6 +37,25 @@
     </div>
 
 
+    <script>
+        var searchBar = document.getElementById("searchBar");
+
+        searchBar.addEventListener("keyup", filterItems);
+
+        function filterItems(e) {
+        var text = e.target.value.toLowerCase();
+        var posts = document.getElementsByClassName("post");
+        Array.from(posts).forEach(function (item) {
+            var itemName = item.getElementsByTagName("h2")[0].innerText;
+            console.log(itemName);
+            if (itemName.toLowerCase().indexOf(text) != -1) {
+            item.style.display = "block";
+            } else {
+            item.style.display = "none";
+            }
+        });
+        }
+    </script>
 </body>
 
 </html>
