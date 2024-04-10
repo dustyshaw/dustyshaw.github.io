@@ -4,14 +4,10 @@
     color: white; */
   }
 
-  h2 {
-    font-weight: strong;
-  }
-  
-  h3 {
-    margin-bottom: 2px;
-  }
-  
+h4 {
+  font-weight: bolder;
+}
+
   body {
     max-width: 600px;
     margin-left: auto;
