@@ -6,8 +6,8 @@ body {
 }
 
 p ul li ol{
-    line-height: 1.55rem;
-    font-size: 17.5px;
+    line-height: 1.65rem;
+    font-size: 20px !important;
     color: darkslategray;
 }
 
@@ -40,4 +40,23 @@ a {
     padding-left: 10px;
     font-size: small;
     color: darkgray;
+  }
+
+
+  .table-of-contents {
+    font-family: sans-serif;
+    line-height: 1.65rem;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 10px 10px;
+    margin-top: 30px;
+  }
+  
+  .table-of-contents ul {
+    color: black;
+    list-style: none;
+  }
+  
+  .table-of-contents a {
+    color: black;
   }

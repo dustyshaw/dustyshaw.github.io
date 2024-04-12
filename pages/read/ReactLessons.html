@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dusty Shaw</title>
+    <!-- Bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/pages/read/read.css">
+</head>
+
+<body>
+    <h1>My React Native Learning Journey</h1>
+    <p>Recently, I took it upon myself to finally learn a full Javascript framework. Coming from a .NET background (and
+        being slightly too attached to my C#) I was a bit nervous and confused. There seemed to be so many differences in
+        how you render and comput components. However, with the amazing help of the internet and lot's of YouTube
+        videos, I was able to create my first React Native app.</p>
+    <p>My goals for my app was to create a simple nutrition app that would help you to keep track of calories that you
+        eat every day. </p>
+        <p>I thought this idea was simple enough to get a handle on rendering JavaScript components, but
+        also complicated enought that I would learn all the useful things about a library (like using databases and
+        API's to generate dynamic data).</p>
+
+
+        <div class="table-of-contents">
+            <!--   <p>Table of Contents</p> -->
+              <ul>
+                <li> <a href="#why-react-native">Why React Native?</a></li>
+                <li><a href="#planning-my-practice-project">Planning my Practice Project </a></li>
+                <li><a href="#time-to-build">Time to Build</a></li>
+                <li> <a href="">Conclusion</a></li>
+              </ul>
+            </div>
+
+
+    <h2 id="why-react-native">Why React Native?</h2>
+    <p>React Native stems from one of the most popular JavaScript front-end libraries: React js. While React js is a
+        front-end component library built off of JavaScript, React Native is just for creating native apps (the kind of
+        apps you find in the app store on iOS, Android, and Windows). Confusing right!?</p>
+    <p>After some research into different frameworks for mobile development, I found that React Native has some
+        benefits: </p>
+    <ul>
+        <li>Components can be reaused for web based applications written in React js (awesome! Reduced duplication)</li>
+        <li>Write platform specific code with just JavaScript (great! Don't have to learn Java or that pesky
+            <i>Swift</i> to make mobile apps)</li>
+        <li>Seems faster than other front-end frameworks like Angular</li>
+    </ul>
+    <p>At the end of the day, the programming language you choose might not make as much of a difference than you think,
+        so I try not to stress this part too much.</p>
+
+    <h2 id="planning-my-practice-project">Planning my Practice Project</h2>
+    <p>To begin, I decided to pencil in some designs of what I want my app to look like. This helps me understand the
+        different functions that my app requires, and it gives me a great jumping off point.</p>
+    <img src="/pages/read/images/SimpleNutritionDesign.png" class="img-fluid" alt="Design for Simple Nutrition app" />
+    <p>Now that I had the general layout of what I wanted the app to look like, it was time to develop some
+        requirements.</p>
+    <p>Users should be able to...</p>
+    <ol>
+        <li>Add a food item to a specific day.</li>
+        <li>See an overview of how many calories they have eaten per day.</li>
+        <li>See the macros of what they have eaten for that day (protein, carbs, fats)</li>
+        <li>Scan a food item to find it via a food API</li>
+    </ol>
+    <p>With these requirements, I now know what the minimum viable product is.</p>
+
+    <h2 id="time-to-build">Time to Build</h2>
+    <p>As I am working on Windows, I downloaded npm so I can start my project:</p>
+    <div class="code-block">
+        <div class="code-header">
+        </div>
+        <div class="code-content">
+            <p>npx create-expo-app SimpleNutrition</p>
+
+            <p>cd SimpleNutrition</p>
+            <p>npx expo start</p>
+        </div>
+        <div class="code-footer">
+            <p>Powershell</p>
+        </div>
+    </div>
+    <p>After running the app, I got used to using the Windows emulators.</p>
+
+
+</body>
+
+</html>
