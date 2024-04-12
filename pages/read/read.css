@@ -6,6 +6,10 @@ body {
     margin-top: 100px;
 }
 
+h2, h3, h4, h5 {
+  margin-top: 25px;
+}
+
 p ul li ol{
     line-height: 1.65rem;
     font-size: 20px !important;
@@ -36,11 +40,11 @@ a {
   }
   
   .code-block .code-footer {
-    background-color: lightgray;
+    background-color: whitesmoke;
     border-radius: 0px 0px 7px 7px;
     padding-left: 10px;
     font-size: small;
-    color: darkgray;
+    color: dimgray;
   }
 
 
