@@ -17,6 +17,16 @@
     <link rel="stylesheet" href="/pages/read/read.css">
 </head>
 
+<!-- <header>
+<nav>
+    <h2>DS</h2>
+    <ul>
+      <li><a href="#">Read More</a></li>
+      <li><a href="#">About Me</a></li>
+    </ul>
+  </nav>
+</header> -->
+
 <body>
     <h1>My React Native Learning Journey</h1>
     <p>Recently, I took it upon myself to finally learn a full Javascript framework. Coming from a .NET background (and
@@ -77,18 +87,71 @@
         <div class="code-header">
         </div>
         <div class="code-content">
+            <code>
             <p>npx create-expo-app SimpleNutrition</p>
 
             <p>cd SimpleNutrition</p>
             <p>npx expo start</p>
+        </code>
         </div>
         <div class="code-footer">
             <p>Powershell</p>
         </div>
     </div>
     <p>After running the app, I got used to using the Windows emulators.</p>
+    <p>A large learning curve was having to import absolutely everything! Using components only and very little HTML was a bit of a shock. For example, adding a button wasn't as simple as using a "<code>&lt;button&gt;&lt;/button&gt;</code>" element, but instead you have to import it.</p>
+
+    <h2>Components: an Overview</h2>
+    <p>While creating my first app, I first found that there were multiple built in components to React Native:</p>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Component</th>
+            <th scope="col">Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"><code>&lt;Text&gt;&lt;/Text&gt;</code></th>
+            <td>Similar to <code>&lt;p&gt;&lt;/p&gt;</code> in HTML</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;Button&gt;&lt;/Button&gt;</code></th>
+            <td>button</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;Image&gt;&lt;/Image&gt;</code></th>
+            <td>Image</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;TouchableHighlight&gt;</code></th>
+            <td>Creates an area that when tapped will become darker.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;SafeAreaView&gt;</code></th>
+            <td>Area on screen that will not be covered by islands, notches, or other physical features of phone.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;NavigationContainer&gt;</code></th>
+            <td>Area on screen that will not be covered by islands, notches, or other physical features of phone.</td>
+          </tr>
+          <tr>
+            <th scope="row"><code>&lt;View&gt;</code></th>
+            <td>Comparable to a <code>&lt;div&gt;</code>, a semantic divider of code.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p>This is by no means a comprehensive list, but I found these to be the most used or important. The real beauty of React Native is creating and injecting custom components into pages, reducing the amount of duplicated code.</p>
+
+      <h2>Navigation</h2>
+      <p>The next difficult part was to learn how to navigate to different pages in my app. So far, I have the <code>overview</code> page and the <code>app.js</code> page. Now how do I navigate between them?</p>
 
 
 </body>
+<footer>
+    <hr />
+    <strong>Thank you for reading!</strong>
+</footer>
 
 </html>

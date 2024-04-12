@@ -12,7 +12,7 @@ p ul li ol{
 }
 
 a {
-    color: rgb(1, 146, 235);
+    color: #cc185a;
     text-decoration: none;
 }
 
@@ -53,10 +53,49 @@ a {
   }
   
   .table-of-contents ul {
-    color: black;
+    color: #504d86;
     list-style: none;
   }
   
   .table-of-contents a {
-    color: black;
+    color: #504d86;
   }
+
+
+  nav {
+    display: flex;
+    justify-content:space-between; 
+    align-items: center;
+    padding: 1rem 2rem;
+    background: #cfd8dc; 
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none; 
+  }
+  
+  nav li {
+    padding-left: 1rem; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #cc185a;
+  }
+  
+   /* 
+    Extra small devices (phones, 600px and down) 
+  */
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+    }
+    nav ul {
+      flex-direction: column;
+      padding-top: 0.5rem;
+    }
+    nav li {
+      padding: 0.5rem 0;
+    }
+  } 
