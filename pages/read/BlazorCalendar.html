@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blazor Calendar</title>
+    <!-- Bootstrap 5 link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://example.com/fontawesome/v5.15.4/js/all.js" data-auto-a11y="true"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="read.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">DS</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/pages/read/index.html">Read All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">About Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="main-content">
+        <h1>Blazor Interactive Calendar</h1>
+        <p>Many of my projects involve using a calendar for various functions. I created this calendar that you can
+            click through and that can display the days of the month. </p>
+        <div class="code-block">
+            <div class="code-header">
+            </div>
+            <div class="code-content">
+                <pre>
+&lt;div class="calendar"&gt;
+    <i>&lt;!-- Container for button controls --&gt;</i>
+    &lt;div class="d-flex flex-row justify-content-center"&gt;
+        &lt;button class="btn-light" @onclick="() => ChangeMonth(-1)"&gt;&lt;/button&gt;
+        &lt;h4 class="monthAndDayNames"&gt;@SelectedDay.ToString("MMMM"), @SelectedDay.Year&lt;/h4&gt;
+        &lt;button class="btn-light" @onclick="() => ChangeMonth(1)"&gt;&lt;/button&gt;
+    &lt;/div&gt;
+
+    &lt;center&gt;&lt;button @onclick="SelectToday"&gt;Today&lt;/button&gt;&lt;/center&gt;
+
+    <i>&lt;!-- Container for the Week Days --&gt;</i>
+    &lt;div class="weeks"&gt;
+        @foreach (var DayOfWeekName in DaysOfWeek)
+        {
+        &lt;div class="dayOfWeek"&gt;@DayOfWeekName&lt;/div&gt;
+        }
+    &lt;/div&gt;
+
+    <i>&lt;!-- Container for each day --&gt;</i>
+    &lt;div class="monthDaysContainer"&gt;
+        <i>&lt;!-- Shows blank squares so the first day lines up with the correct week day name --&gt;</i>
+        @for(int i = 0; i &lt; EmptyDaysCounter; i++) 
+        { 
+            &lt;div class="emptyDay"&gt;&lt;/div&gt;
+        }
+        <i>&lt;!-- Days of the month --&gt;</i>
+        @foreach(var numDay in NumberDays)
+        {
+            &lt;div class="monthDay today"&gt;@numDay&lt;/div&gt;
+        }
+    &lt;/div&gt;
+&lt;/div&gt;
+      </pre>
+            </div>
+            <div class="code-footer">
+                <p>Calendar.razor file</p>
+            </div>
+        </div>
+
+
+        <div class="code-block">
+            <div class="code-header">
+            </div>
+            <div class="code-content">
+                <pre>
+@code {
+    public List&lt;string&gt; DaysOfWeek { get; set; } = new() { "SUN", "MON", "TUE", "WED", "THUR", "FRI", "SAT" };
+    public List&lt;int&gt; NumberDays { get; set; } = new();
+    public DateTime SelectedDay { get; set; } = DateTime.Today;
+    public int SelectedMonthString { get; set; }
+    public int FirstDayOfWeek { get; set; }
+    public int EmptyDaysCounter { get; set; }
+
+    public DateTime StartDate { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        ResetDays();
+    }
+
+    public List&lt;int&gt; GetMonthsNumberDays()
+    {
+        List&lt;int&gt; numDays = new();
+        int year = SelectedDay.Year;
+        int daysInMonth = DateTime.DaysInMonth(year, SelectedDay.Month);
+        for (int day = 1; day <= daysInMonth; day++)
+        {
+            numDays.Add(day);
+        }
+        return numDays;
+    }
+
+    public int CalculateFirstDayofWeek()
+    {
+        FirstDayOfWeek = (int)new DateTime(SelectedDay.Year, SelectedDay.Month, 1).DayOfWeek;
+        return FirstDayOfWeek;
+    }
+
+    public void ChangeMonth(int upOrDown)
+    {
+        SelectedDay = SelectedDay.AddMonths(upOrDown);
+        ResetDays();
+    }
+
+    public void SelectToday()
+    {
+        SelectedDay = DateTime.Today;
+        ResetDays();
+    }
+
+    public void ResetDays()
+    {
+        NumberDays = GetMonthsNumberDays();
+        EmptyDaysCounter = CalculateFirstDayofWeek();
+    }
+}
+      </pre>
+            </div>
+            <div class="code-footer">
+                <p>Calendar.razor code block</p>
+            </div>
+        </div>
+
+        <div class="mb-5 mt-5">
+            <hr />
+            <i>
+                <p>Thank you for reading!</p>
+            </i>
+            <p>Read some of my other posts here.</p>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

@@ -8,7 +8,7 @@ h4 {
   font-weight: bolder;
 }
 
-  body {
+  .main-content {
     max-width: 600px;
     margin-left: auto;
     margin-right: auto;
@@ -26,18 +26,18 @@ h4 {
     text-transform: capitalize;
   }
   
-  a {
-    color: #4a80ff !important;
+  .main-content a {
+    color: #cc185a !important;
     text-decoration: none;
   }
   
-  a:hover {
-    color: #0550ff !important;
+  .main-content a:hover {
+    color: #cc185a !important;
     text-decoration: underline;
   }
   
-  a:visited {
-    color: #5f1fb8 !important;
+  .main-content a:visited {
+    color: #910d8b !important;
   }
   
   input {

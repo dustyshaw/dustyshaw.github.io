@@ -1,10 +1,11 @@
-body {
+.main-content {
     max-width: 650px;
     padding: 0px 12px 0px 12px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 100px;
 }
+
 
 h2, h3, h4, h5 {
   margin-top: 25px;
@@ -26,9 +27,11 @@ a {
     background-color: #262626;
     font-family: monospace, sans-serif;
     color: white !important;
-    padding: 10px;
+    padding: 10px 10px 0px 10px;
     border: solid lightgray 1px;
     border-radius: 7px 7px 0px 0px;
+    scrollbar-color: gray black;
+    scrollbar-track-color: blue;
   }
 
   .code-content p {
@@ -40,8 +43,9 @@ a {
   }
   
   .code-block .code-footer {
-    background-color: whitesmoke;
+    background-color: rgb(223, 222, 222);
     border-radius: 0px 0px 7px 7px;
+    border: none;
     padding-left: 10px;
     font-size: small;
     color: dimgray;
