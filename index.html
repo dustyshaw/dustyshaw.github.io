@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dusty Shaw</title>
-    <link rel="icon" href="images\DS.png">
+    <link rel="icon" href="images/logo-light.svg">
     <!-- Bootstrap 5 link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -19,191 +19,204 @@
 </head>
 
 <body>
+
     <div class="top mt-5">
         <div class="container-row">
             <div class="container-row header-side">
-                <a href="https://www.linkedin.com/in/dusty-shaw-195373257" target="_blank" rel="noopener"><img
-                        class="icon-sm"
-                        src="https://uxwing.com/wp-content/themes/uxwing/download/brands-and-social-media/linkedin-app-white-icon.png" /></a>
-                <a href="https://github.com/dustyshaw" target="_blank" rel="noopener"><img class="icon-sm"
-                        src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
-                        style="border-radius: 3px;" /></a>
+                <a href="https://www.linkedin.com/in/dusty-shaw-195373257" target="_blank" rel="noopener">
+                    <img class="icon-sm"
+                         src="images/LinkedInWhite.svg" />
+                </a>
+                <a href="https://github.com/dustyshaw" target="_blank" rel="noopener">
+                    <img class="icon-sm"
+                         src="https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png"
+                         style="border-radius: 3px;" />
+                </a>
             </div>
             <div>
                 <img src="images/selfie.jpg" id="portfolio-img" />
             </div>
             <div class="container-row header-side">
-                <span>
-                    email: <p id="obfuscated-email"></p>
-                </span>
-                <a href="downloads/Resume 2024.pdf" target="_blank" opener="noopener">
-                    <p>cv</p>
+                <a href="./contact.html">
+                    <span>
+                        contact
+                    </span>
                 </a>
             </div>
         </div>
     </div>
-    <div>
-        <center>
-        <p id="text-blurb" class="lead mt-4">Hello! My name is Dusty and I am learning to code. I have many interests
-            including web development, data science, and software engineering in general. <br />In my free time, I like to
-            draw or create designs for my projects. I enjoy math and science as well as learning about space and
-            astronomy.
-        </p>
-            </center>
+    <div class="text-center container">
+        
+            <!-- <p id="text-blurb text-center" class="lead mt-4">
+                Hello! My name is Dusty and I am learning to code. I have many interests
+                including web development, data science, and software engineering in general. <br />In my free time, I like to
+                draw or create designs for my projects. I enjoy math and science as well as learning about space and
+                astronomy.
+            </p> -->
     </div>
     <!-- <button id="changeThemeBtn">Change Theme</button> -->
 
-    <div class="container">
-        <h2 class="">Skills</h2>
-        <div class="row mt-3">
-            <div class="col-lg-2">
-                <p>C#</p>
-            </div>
-            <div class="col-lg-10">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
+        <div class="grad-background">
+            <div class="gb-interior">
+                <h2 class="mt-5 pt-5">Projects</h2>
+                <!-- <p>I am working a mini-blog here! Check out what projects are in progress, what I'm reading about, or what designs I'm working on <a href="/pages/read/index.html">here</a>.</p> -->
+                <div class="row mt-5">
+                    <div class="col-md-6">
+                        <img class="img img-fluid project-img" src="images/CollaborativeMusic.png"
+                             style="border-radius: 10px;" />
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Collaborative Music</h2>
+                        <p>
+                            Created with the Snow College Business Department.
+                            Won first place Best Overall Site and Best Application of Entrepreneurship Principles in the
+                            2023 <a href="https://www.thegritcenter.com/" target="_blank" rel="noopener">GRIT Center</a>
+                            Website Competition.
+                        </p>
+                        <ul>
+                            <li>C#</li>
+                            <li>Blazor Web App</li>
+                            <li>HTML, CSS, Bootstrap</li>
+                            <li>Azure</li>
+                        </ul>
+                        <a class="link-img" href="https://github.com/ParkerS00/Collective_Music" target="_blank"
+                           rel="noopener">
+                            <img class="link-img img img-fluid" src="images\github-logo.png" alt="Github Logo"
+                                 style="filter: invert(1);">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-lg-2">
-                <p>HTML/CSS</p>
-            </div>
-            <div class="col-lg-10">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
+                <div class="row mt-5 d-none">
+                    <div class="col-md-6">
+                        <img class="img img-fluid project-img" src="https://dummyimage.com/400x250/000/fff" />
+                    </div>
+                    <div class="col-md-6">
+                        <h2>FIX-IT-FAST</h2>
+                        <p>This website was designed and developed for a local handyman business. </p>
+                        <ul>
+                            <li>Blazor Web App .NET</li>
+                            <li>HTML, CSS, Bootstrap</li>
+                        </ul>
+                        <a class="link-img" href="https://github.com/dustyshaw/Fix-It-Fast" target="_blank" rel="noopener">
+                            <img class="link-img img img-fluid" src="images\github-logo.png" alt="Github Logo"
+                                 style="filter: invert(1);">
+                        </a>
+                    </div>
                 </div>
+                <p class="mt-5">Other honorable mentions: </p>
+                <ul class="pb-5">
+                    <li>
+                        <strong><a href="https://github.com/dustyshaw/CppSudokuSolver" target="_blank">C++ Sudoku Solver</a></strong> - Solves various sudoku puzzles via recursion and
+                        a brute force algorithm. This project was created as an exploration of C++.
+                    </li>
+                    <li>
+                        <strong><a href="#">Conway's Game of Life in Clojure</a></strong> - A visualization of Conway's
+                        famous "Game of Life". Creates a board of cells and simulates cellular autonoma.
+                    </li>
+                    <li><strong><a href="">JavaScript Color Pallette Generator</a></strong> - Generates color pallettes given a base color or by choosing a random color. Select between Monochromatic or Contrasting color palletes. Quickly copy hex codes and generated CSS style declarations for quick development!</li>
+                </ul>
             </div>
         </div>
-        <div class="row my-3">
-            <div class="col-lg-2">
-                <p>JavaScript</p>
-            </div>
-            <div class="col-lg-10">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-lg-2">
-                <p>PostgreSQL</p>
-            </div>
-            <div class="col-lg-10">
-                <div class="progress">
-                    <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0"
-                        aria-valuemax="100"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row my-3">
-            <div class="col-lg-2">
-            <p>CI/CD</p></div>
-            <div class="col-lg-10">
-            <div class="progress">
-                <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0"
-                    aria-valuemax="100"></div></div>
-            </div>
-        </div>
-        <br>
-    </div>
-    <div>
+
         
-    </div>
-    <div class="grad-background">
-        <div class="gb-interior">
-            <h2 class="mt-5 pt-5">Projects</h2>
-            <!-- <p>I am working a mini-blog here! Check out what projects are in progress, what I'm reading about, or what designs I'm working on <a href="/pages/read/index.html">here</a>.</p> -->
-            <div class="row mt-5">
-                <div class="col-md-6">
-                    <img class="img img-fluid project-img" src="images/CollaborativeMusic.png"
-                        style="border-radius: 10px;" />
+        <div class="container">
+            <h2 class="">Skills</h2>
+            <div class="row mt-3">
+                <div class="col-lg-2">
+                    <p>C#</p>
                 </div>
-                <div class="col-md-6">
-                    <h2>Collaborative Music</h2>
-                    <p>Created with the Snow College Business Department.
-                        Won first place Best Overall Site and Best Application of Entrepreneurship Principles in the
-                        2023 <a href="https://www.thegritcenter.com/" target="_blank" rel="noopener">GRIT Center</a>
-                        Website Competition.</p>
-                    <ul>
-                        <li>C#</li>
-                        <li>Blazor Web App</li>
-                        <li>HTML, CSS, Bootstrap</li>
-                        <li>Azure</li>
-                    </ul>
-                    <a class="link-img" href="https://github.com/ParkerS00/Collective_Music" target="_blank"
-                        rel="noopener">
-                        <img class="link-img img img-fluid" src="images\github-logo.png" alt="Github Logo"
-                            style="filter: invert(1);">
-                    </a>
+                <div class="col-lg-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
                 </div>
             </div>
-            <div class="row mt-5 d-none">
-                <div class="col-md-6">
-                    <img class="img img-fluid project-img" src="https://dummyimage.com/400x250/000/fff" />
+            <div class="row my-3">
+                <div class="col-lg-2">
+                    <p>HTML/CSS</p>
                 </div>
-                <div class="col-md-6">
-                    <h2>FIX-IT-FAST</h2>
-                    <p>This website was designed and developed for a local handyman business. </p>
-                    <ul>
-                        <li>Blazor Web App .NET</li>
-                        <li>HTML, CSS, Bootstrap</li>
-                    </ul>
-                    <a class="link-img" href="https://github.com/dustyshaw/Fix-It-Fast" target="_blank" rel="noopener">
-                        <img class="link-img img img-fluid" src="images\github-logo.png" alt="Github Logo"
-                            style="filter: invert(1);">
-                    </a>
+                <div class="col-lg-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
                 </div>
             </div>
-            <p class="mt-5">Other honorable mentions: </p>
-            <ul class="pb-5">
-                <li><strong><a href="https://github.com/dustyshaw/CppSudokuSolver" target="_blank">C++ Sudoku Solver</a></strong> - Solves various sudoku puzzles via recursion and
-                    a brute force algorithm. This project was created as an exploration of C++.</li>
-                <li><strong><a href="#">Conway's Game of Life in Clojure</a></strong> - A visualization of Conway's
-                    famous "Game of Life". Creates a board of cells and simulates cellular autonoma.</li>
-                <li><strong><a href="">JavaScript Color Pallette Generator</a></strong> - Generates color pallettes given a base color or by choosing a random color. Select between Monochromatic or Contrasting color palletes. Quickly copy hex codes and generated CSS style declarations for quick development!</li>
-            </ul>
+            <div class="row my-3">
+                <div class="col-lg-2">
+                    <p>JavaScript</p>
+                </div>
+                <div class="col-lg-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-2">
+                    <p>PostgreSQL</p>
+                </div>
+                <div class="col-lg-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="25" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-lg-2">
+                    <p>CI/CD</p>
+                </div>
+                <div class="col-lg-10">
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 10%" aria-valuenow="25" aria-valuemin="0"
+                             aria-valuemax="100"></div>
+                    </div>
+                </div>
+            </div>
+            <br>
         </div>
-    </div>
-    <br>
-    <br>
-    <div class="content">
-        <h2>Previous Work Experience</h2>
-        <h3 class="mt-5">Web Developer Intern - <em>Snow College</em></h3>
-        <small>2022 - present</small>
-        <p>As an intern, I helped develop and maintain websites like <a
-                href="https://www.snow.edu/studentlife/office/clubs/index.html" target="_blank" rel="noopener">this student club website</a> or sometimes <a href="https://snow.edu/academics/science_math/planetarium/show-descriptions.html" target="_blank" rel="noopener">this planetarium website</a>.
-            Using HTML, CSS, and JavaScript, I manage websites under the Snow College domain, creating unique layouts. Accessibility is a top priority here, and I ensure that the pages I create follow the web accessibility guidelines.
-        </p>
-        <h3 class="mt-5">Software Developer Intern - <em>Rocky Mountain Testing Solutions</em></h3>
-        <small>Summer of 2024</small>
-        <p>Implemented updates and enhancements to existing applications to improve functionality. Collaborated with senior developers to maintain WinForms application and MySQL relational database. Ensured compliance with ASTM standards and other relevant specifications.</p>
-        <h3 class="mt-5">Software Engineering Intern - <em>EFORCE</em></h3>
-        <small>Summer of 2023</small>
-        <p>During my summer internship at EFORCE software, I was tasked with creating user interface testing. During the
-            process, I became familiar with the software development lifecyle and also the process of creating efficient
-            test scripts using frameworks such as Playwright for .NET.
-        </p>
+  
         <br>
-        <h2 class="mt-5">Education</h2>
-        <h3 class="mt-5">Snow College</h3>
-        <h5>Bachelors of Science in Software Engineering - <i>Graduating May 2025</i></h5>
-        <ul>
-            <li>Emphasis in Web Development</li>
-            <li>Emphasis in Data Science</li>
-        </ul>
-        <h5>Associates of Science, Summa Cum Laude - <i>May 2022</i></h5>
-        <h3>Bear River High School - <i>2020</i></h3>
-    </div>
+        <br>
+        <div class="content">
+            <h2>Previous Work Experience</h2>
+            <h3 class="mt-5">Web Developer Intern - <em>Snow College</em></h3>
+            <small>2022 - present</small>
+            <p>
+                As an intern, I helped develop and maintain websites like <a href="https://www.snow.edu/studentlife/office/clubs/index.html" target="_blank" rel="noopener">this student club website</a> or sometimes <a href="https://snow.edu/academics/science_math/planetarium/show-descriptions.html" target="_blank" rel="noopener">this planetarium website</a>.
+                Using HTML, CSS, and JavaScript, I manage websites under the Snow College domain, creating unique layouts. Accessibility is a top priority here, and I ensure that the pages I create follow the web accessibility guidelines.
+            </p>
+            <h3 class="mt-5">Software Developer Intern - <em>Rocky Mountain Testing Solutions</em></h3>
+            <small>Summer of 2024</small>
+            <p>Implemented updates and enhancements to existing applications to improve functionality. Collaborated with senior developers to maintain WinForms application and MySQL relational database. Ensured compliance with ASTM standards and other relevant specifications.</p>
+            <h3 class="mt-5">Software Engineering Intern - <em>EFORCE</em></h3>
+            <small>Summer of 2023</small>
+            <p>
+                During my summer internship at EFORCE software, I was tasked with creating user interface testing. During the
+                process, I became familiar with the software development lifecyle and also the process of creating efficient
+                test scripts using frameworks such as Playwright for .NET.
+            </p>
+            <br>
+            <h2 class="mt-5">Education</h2>
+            <h3 class="mt-5">Snow College</h3>
+            <h5>Bachelors of Science in Software Engineering - <i>Graduating May 2025</i></h5>
+            <ul>
+                <li>Emphasis in Web Development</li>
+                <li>Emphasis in Data Science</li>
+            </ul>
+            <h5>Associates of Science, Summa Cum Laude - <i>May 2022</i></h5>
+            <h3>Bear River High School - <i>2020</i></h3>
+        </div>
+
 </body>
 <footer>
     <div style="margin-left: auto; margin-right: auto; width: 500px; background: none;">
 
         <p class="text-center"><small>Dusty Shaw</small></p>
-        <p class="text-center"></p>
+        <p class="text-center"><img class="img img-fluid" src="images/logo-light.svg" /></p>
 
     </div>
 </footer>
